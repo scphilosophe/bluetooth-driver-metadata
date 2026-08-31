@@ -1,17 +1,13 @@
 {
   "schemaVersion": 1,
   "product": "intel-wireless-bluetooth",
-  "generatedAt": "2026-08-31T09:29:10.379Z",
-  "expiresAt": "2026-10-15T23:59:59.000Z",
+  "generatedAt": "2026-08-31T11:26:40.102Z",
+  "expiresAt": "2026-09-08T11:26:40.102Z",
   "packages": [
     {
       "route": "current",
       "name": "Current Intel Bluetooth package",
       "pageUrl": "https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html",
-      "sourceUrls": [
-        "https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html",
-        "https://www.intel.co.jp/content/www/jp/ja/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html"
-      ],
       "packageVersion": "24.60.0",
       "fileName": "BT-24.60.0-64UWD-Win10-Win11.exe",
       "downloadUrl": "https://downloadmirror.intel.com/925350/BT-24.60.0-64UWD-Win10-Win11.exe",
@@ -69,16 +65,16 @@
         "BE200": [
           "24.60.0.4"
         ],
-        "AX231": [
-          "24.60.0.4",
-          "24.40.11.1"
-        ],
-        "AX211": [
-          "24.60.0.4",
-          "24.40.11.1"
-        ],
         "AX411": [
           "24.40.11.1"
+        ],
+        "AX231": [
+          "24.40.11.1",
+          "24.60.0.4"
+        ],
+        "AX211": [
+          "24.40.11.1",
+          "24.60.0.4"
         ],
         "AX210": [
           "24.40.11.1"
@@ -94,16 +90,16 @@
         ]
       },
       "endOfLife": false,
+      "sourceUrls": [
+        "https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html",
+        "https://www.intel.co.jp/content/www/jp/ja/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html"
+      ],
       "installerHashVerifiedAt": "2026-08-31T00:00:00.000Z"
     },
     {
       "route": "ax200",
       "name": "Intel AX200 and Killer AX1650 (x/w) final package",
       "pageUrl": "https://www.intel.com/content/www/us/en/download/874349/intel-wireless-bluetooth-driver-for-intel-wi-fi-6-ax200.html",
-      "sourceUrls": [
-        "https://www.intel.com/content/www/us/en/download/874349/intel-wireless-bluetooth-driver-for-intel-wi-fi-6-ax200.html",
-        "https://www.intel.co.jp/content/www/jp/ja/download/874349/intel-wireless-bluetooth-driver-for-intel-wi-fi-6-ax200.html"
-      ],
       "packageVersion": "24.10.0",
       "fileName": "BT-24.10.0-64UWD-Win10-Win11.exe",
       "downloadUrl": "https://downloadmirror.intel.com/874350/BT-24.10.0-64UWD-Win10-Win11.exe",
@@ -122,16 +118,16 @@
         ]
       },
       "endOfLife": true,
+      "sourceUrls": [
+        "https://www.intel.com/content/www/us/en/download/874349/intel-wireless-bluetooth-driver-for-intel-wi-fi-6-ax200.html",
+        "https://www.intel.co.jp/content/www/jp/ja/download/874349/intel-wireless-bluetooth-driver-for-intel-wi-fi-6-ax200.html"
+      ],
       "installerHashVerifiedAt": "2026-08-31T00:00:00.000Z"
     },
     {
       "route": "ac7265",
       "name": "Intel Wireless-AC 3168 and 3165 final package",
       "pageUrl": "https://www.intel.com/content/www/us/en/download/823075/intel-wireless-bluetooth-drivers-for-wireless-ac-7265-rev-d-3168-and-3165.html",
-      "sourceUrls": [
-        "https://www.intel.com/content/www/us/en/download/823075/intel-wireless-bluetooth-drivers-for-wireless-ac-7265-rev-d-3168-and-3165.html",
-        "https://www.intel.co.jp/content/www/jp/ja/download/823075/intel-wireless-bluetooth-drivers-for-wireless-ac-7265-rev-d-3168-and-3165.html"
-      ],
       "packageVersion": "23.40.0",
       "fileName": "BT-23.40.0-64UWD-Win10-Win11.exe",
       "downloadUrl": "https://downloadmirror.intel.com/823076/BT-23.40.0-64UWD-Win10-Win11.exe",
@@ -143,23 +139,25 @@
       ],
       "driverVersions": {
         "3165": [
-          "20.100.10.11"
+          "20.100.10.11",
+          "20.100.9.8"
         ],
         "3168": [
-          "20.100.10.11"
+          "20.100.10.11",
+          "20.100.9.8"
         ]
       },
       "endOfLife": true,
+      "sourceUrls": [
+        "https://www.intel.com/content/www/us/en/download/823075/intel-wireless-bluetooth-drivers-for-wireless-ac-7265-rev-d-3168-and-3165.html",
+        "https://www.intel.co.jp/content/www/jp/ja/download/823075/intel-wireless-bluetooth-drivers-for-wireless-ac-7265-rev-d-3168-and-3165.html"
+      ],
       "installerHashVerifiedAt": "2026-08-31T00:00:00.000Z"
     },
     {
       "route": "ac8265",
       "name": "Intel Wireless-AC 8260 and 8265 final package",
       "pageUrl": "https://www.intel.com/content/www/us/en/download/774186/intel-wireless-bluetooth-drivers-for-intel-dual-band-wireless-ac-8260-and-intel-dual-band-wireless-ac-8265.html",
-      "sourceUrls": [
-        "https://www.intel.com/content/www/us/en/download/774186/intel-wireless-bluetooth-drivers-for-intel-dual-band-wireless-ac-8260-and-intel-dual-band-wireless-ac-8265.html",
-        "https://www.intel.co.jp/content/www/jp/ja/download/774186/intel-wireless-bluetooth-drivers-for-intel-dual-band-wireless-ac-8260-and-intel-dual-band-wireless-ac-8265.html"
-      ],
       "packageVersion": "22.200.0",
       "fileName": "BT-22.200.0-64UWD-Win10-Win11.exe",
       "downloadUrl": "https://downloadmirror.intel.com/774201/BT-22.200.0-64UWD-Win10-Win11.exe",
@@ -178,6 +176,10 @@
         ]
       },
       "endOfLife": true,
+      "sourceUrls": [
+        "https://www.intel.com/content/www/us/en/download/774186/intel-wireless-bluetooth-drivers-for-intel-dual-band-wireless-ac-8260-and-intel-dual-band-wireless-ac-8265.html",
+        "https://www.intel.co.jp/content/www/jp/ja/download/774186/intel-wireless-bluetooth-drivers-for-intel-dual-band-wireless-ac-8260-and-intel-dual-band-wireless-ac-8265.html"
+      ],
       "installerHashVerifiedAt": "2026-08-31T00:00:00.000Z"
     }
   ]
