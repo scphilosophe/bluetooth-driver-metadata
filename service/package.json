@@ -1,0 +1,13 @@
+{
+  "name": "intel-bluetooth-metadata",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "update": "node scripts/update-manifest.mjs"
+  }
+}

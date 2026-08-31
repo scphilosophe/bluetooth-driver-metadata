@@ -1,0 +1,54 @@
+name: Update signed Intel metadata
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 17 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/update-metadata.yml'
+      - 'config/**'
+      - 'service/lib/**'
+      - 'service/package.json'
+      - 'service/scripts/**'
+      - 'service/test/**'
+      - 'service/public/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intel-bluetooth-metadata
+  cancel-in-progress: false
+
+jobs:
+  verify-and-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test metadata and signature code
+        working-directory: service
+        run: node --test
+      - name: Check Intel and sign a fresh manifest
+        if: github.event_name != 'push'
+        working-directory: service
+        env:
+          METADATA_SIGNING_KEY: ${{ secrets.METADATA_SIGNING_KEY }}
+        run: node scripts/update-manifest.mjs
+      - name: Commit a changed public record
+        if: github.event_name != 'push'
+        run: |
+          if [ -z "$(git status --porcelain -- service/public)" ]; then
+            exit 0
+          fi
+          git config user.name "intel-metadata-bot"
+          git config user.email "intel-metadata-bot@users.noreply.github.com"
+          git add service/public/intel-bluetooth.json service/public/intel-bluetooth.json.sig
+          git commit -m "Update verified Intel Bluetooth metadata"
+          git push
+

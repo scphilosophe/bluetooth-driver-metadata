@@ -29,3 +29,4 @@ replacing the last signed record.
 
 The private signing key must exist only as the encrypted GitHub Actions secret
 `METADATA_SIGNING_KEY`. It is never committed to this repository.
+
