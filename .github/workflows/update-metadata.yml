@@ -35,13 +35,13 @@ jobs:
         working-directory: service
         run: node --test
       - name: Check Intel and sign a fresh manifest
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-metadata]')
         working-directory: service
         env:
           METADATA_SIGNING_KEY: ${{ secrets.METADATA_SIGNING_KEY }}
         run: node scripts/update-manifest.mjs
       - name: Commit a changed public record
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh-metadata]')
         run: |
           if [ -z "$(git status --porcelain -- service/public)" ]; then
             exit 0
@@ -51,4 +51,3 @@ jobs:
           git add service/public/intel-bluetooth.json service/public/intel-bluetooth.json.sig
           git commit -m "Update verified Intel Bluetooth metadata"
           git push
-
