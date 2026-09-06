@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "product": "intel-wireless-bluetooth",
-  "generatedAt": "2026-09-05T17:29:10.961Z",
-  "expiresAt": "2026-09-13T17:29:10.961Z",
+  "generatedAt": "2026-09-06T17:29:52.058Z",
+  "expiresAt": "2026-09-14T17:29:52.058Z",
   "packages": [
     {
       "route": "current",
