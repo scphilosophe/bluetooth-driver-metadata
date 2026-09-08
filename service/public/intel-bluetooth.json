@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "product": "intel-wireless-bluetooth",
-  "generatedAt": "2026-09-07T17:32:20.624Z",
-  "expiresAt": "2026-09-15T17:32:20.624Z",
+  "generatedAt": "2026-09-08T17:32:15.112Z",
+  "expiresAt": "2026-09-16T17:32:15.112Z",
   "packages": [
     {
       "route": "current",
       "name": "Current Intel Bluetooth package",
       "pageUrl": "https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html",
-      "packageVersion": "24.60.0",
-      "fileName": "BT-24.60.0-64UWD-Win10-Win11.exe",
-      "downloadUrl": "https://downloadmirror.intel.com/925350/BT-24.60.0-64UWD-Win10-Win11.exe",
-      "sha256": "75E4AB9F4767E4201490C11A0C6F9664D1E50B8046FF8BB498B6538B4C8DDE05",
-      "sizeBytes": 65166664,
+      "packageVersion": "24.70.0",
+      "fileName": "BT-24.70.0-64UWD-Win10-Win11.exe",
+      "downloadUrl": "https://downloadmirror.intel.com/927576/BT-24.70.0-64UWD-Win10-Win11.exe",
+      "sha256": "001DF2E294E86D051645EA1367F4A19518CA8C2A52782CDD4C1CB81C3C0F038A",
+      "sizeBytes": 64352072,
       "supportedModels": [
         "BE213",
         "BE211",
@@ -39,54 +39,52 @@
       ],
       "driverVersions": {
         "9260": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "9461": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "9462": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "9560": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "BE213": [
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "BE211": [
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "BE202": [
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "BE201": [
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "BE200": [
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "AX411": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "AX231": [
-          "24.40.11.1",
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "AX211": [
-          "24.40.11.1",
-          "24.60.0.4"
+          "24.70.0.4"
         ],
         "AX210": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "AX203": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "AX201": [
-          "24.40.11.1"
+          "24.70.0.4"
         ],
         "AX101": [
-          "24.40.11.1"
+          "24.70.0.4"
         ]
       },
       "endOfLife": false,
@@ -94,7 +92,7 @@
         "https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html",
         "https://www.intel.co.jp/content/www/jp/ja/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html"
       ],
-      "installerHashVerifiedAt": "2026-08-31T00:00:00.000Z"
+      "installerHashVerifiedAt": "2026-09-08T17:32:14.486Z"
     },
     {
       "route": "ax200",
